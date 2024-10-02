@@ -11,6 +11,6 @@ import decapCmsOauth from 'astro-decap-cms-oauth';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://example.com',
-    integrations: [mdx(), sitemap(), react(), decapCmsOauth()],
+    integrations: [mdx(), sitemap(), react(), decapCmsOauth({ decapCMSVersion: "3.3.3", adminDisabled: false, oauthDisabled: true })],
     output: "server",
 });
